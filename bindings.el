@@ -1,15 +1,29 @@
 ; general
-(global-set-key "\C-xg" 'magit-status)
+(global-set-key (kbd "C-x g") 'magit-status)
 
-; fuzzy matching
-(global-set-key "\C-t" 'fuzzy-find-in-project)
-(add-hook 'fuzzy-find-in-project-setup-hook
-	  '(lambda ()
-	     (fuzzy-find-project-root (textmate-project-root))))
+; full screen when using carbon
+(global-set-key (kbd "M-n") 'mac-toggle-max-window)
 
-; switch buffers like tabs in most OS X apps
-(global-set-key (kbd "s-{") 'previous-buffer)
-(global-set-key (kbd "s-}") 'next-buffer)
+; C-t alias for finding files in project
+(global-set-key (kbd "C-t") 'textmate-goto-file)
+
+; mac stuff
+(global-set-key (kbd "M-s") 'save-buffer)      ; save with apple-s
+(global-set-key (kbd "M-z") 'undo)             ; undo with apple-z
+(global-set-key (kbd "C-x v") 'clipboard-yank)
+
+; typical mac tab switching
+(global-set-key (kbd "M-[") 'previous-buffer) ; previous buffer with apple-[
+(global-set-key (kbd "M-]") 'next-buffer)     ; next buffer with apple-]
+
+; shift-direction
+(windmove-default-keybindings)
+
+; rubyamp completion
+(global-set-key (kbd "M-/") 'hippie-expand)
+
+; recent files
+(global-set-key (kbd "C-x f") 'recentf-ido-find-file)
 
 ; unbind upcase
 (global-unset-key "\C-x\C-u")

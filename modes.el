@@ -3,7 +3,6 @@
 (load "~/.emacs.d/modes/diff")
 (load "~/.emacs.d/modes/dired")
 (load "~/.emacs.d/modes/erc")
-(load "~/.emacs.d/modes/erlang")
 (load "~/.emacs.d/modes/html")
 (load "~/.emacs.d/modes/javascript")
 (load "~/.emacs.d/modes/shell")

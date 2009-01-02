@@ -1,5 +1,18 @@
+(when window-system
+  (mouse-wheel-mode t)
+  (setq frame-title-format '(buffer-file-name "%f" ("%b")))
+  (tooltip-mode -1)
+  (tool-bar-mode -1)
+  (blink-cursor-mode -1))
+
 ; no splash screen
 (setq inhibit-startup-screen t)
+
+; hide menubar
+(menu-bar-mode -1)
+
+; save recent files
+(recentf-mode 1)
 
 ; show column number
 (column-number-mode 1)
@@ -26,12 +39,8 @@
 (prefer-coding-system 'utf-8)
 
 ; set computer
-(if (equal system-name "Joshs-MacBook-Pro.local")
+(if (equal system-name "Brennan-MBP.local")
     (setq system-macbook-pro 't)
   (setq system-macbook-pro nil))
-
-(if (equal system-name "Joshs-MacBook-Air.local")
-    (setq system-macbook-air 't)
-  (setq system-macbook-air nil))
 
 (provide 'global)
