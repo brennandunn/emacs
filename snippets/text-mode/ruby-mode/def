@@ -1,0 +1,5 @@
+#name : def(...) ... end
+# --
+def ${name}
+  $0
+end
