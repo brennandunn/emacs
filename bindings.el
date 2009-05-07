@@ -1,11 +1,29 @@
 ; general
-(global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-x g") 'egg-status)
 
 ; set mark (C-SPC conflicts with LaunchBar)
 (global-set-key (kbd "C-q") 'set-mark-command)
 
 ; full screen when using carbon
 (global-set-key (kbd "M-n") 'mac-toggle-max-window)
+
+; anything + proel
+(vendor 'anything)
+(vendor 'anything-config)
+(vendor 'fuzzy-match)
+(vendor 'proel)
+(grep-compute-defaults)
+(setq anything-sources '(anything-c-source-buffers+
+			 proel-anything-current-project-files
+			 anything-c-source-locate
+			 anything-c-source-recentf
+			 proel-anything-projects
+			 anything-c-source-org-headline
+			 anything-c-source-buffer-not-found))
+
+; keybindings for a + p
+(global-set-key (kbd "C-c C-d") 'anything)
+(global-set-key (kbd "C-c C-f") 'proel-grep-in-project)
 
 ; C-t alias for finding files in project
 (global-set-key (kbd "C-t") 'textmate-goto-file)
