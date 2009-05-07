@@ -14,8 +14,8 @@
 (defvar *emacs-load-start* (current-time))
 
 (require 'elpa)
-(require 'global)
 (require 'defuns)
+(require 'global)
 (require 'bindings)
 (require 'modes)
 (require 'theme)
