@@ -17,10 +17,11 @@
      (font-lock-keyword-face ((t (:foreground "#CC7833"))))
      (font-lock-preprocessor-face ((t (:foreground "#CC7833")))) ; TODO
      (font-lock-reference-face ((t (:foreground "red")))) ; TODO
-     (font-lock-string-face ((t (:foreground "#A5C261"))))
+     (font-lock-string-face ((t (:foreground "#A5C261" :background "#303324"))))
      (font-lock-type-face ((t (:foreground "white"))))
      (font-lock-variable-name-face ((t (:foreground "white"))))
      (font-lock-warning-face ((t (:foreground "red")))) ; TODO
      (highlight ((t (:background "red")))) ; TODO
      (italic ((t (:italic t))))
+     (hl-line ((t (:background "#112233"))))
      (underline ((t (:underline t)))))))
