@@ -27,6 +27,7 @@
 (vendor 'gist)
 (vendor 'magit)
 (vendor 'textmate)
+(vendor 'egg)
 (textmate-mode)
 (vendor 'whitespace)
 

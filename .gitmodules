@@ -16,3 +16,6 @@
 [submodule "textmate.el"]
 	path = vendor/textmate.el
 	url = git://github.com/defunkt/textmate.el
+[submodule "vendor/egg"]
+	path = vendor/egg
+	url = git://github.com/bogolisk/egg.git

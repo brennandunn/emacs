@@ -1,6 +1,9 @@
 ; general
 (global-set-key (kbd "C-x g") 'magit-status)
 
+; set mark (C-SPC conflicts with LaunchBar)
+(global-set-key (kbd "C-q") 'set-mark-command)
+
 ; full screen when using carbon
 (global-set-key (kbd "M-n") 'mac-toggle-max-window)
 

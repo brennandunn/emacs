@@ -13,6 +13,12 @@
      ((file-exists-p suffix)
       (require library)))))
 
+(defun mac-toggle-max-window ()
+  (interactive)
+  (set-frame-parameter nil 'fullscreen (if (frame-parameter nil 'fullscreen)
+                                           nil
+                                           'fullboth)))
+
 (defun recentf-ido-find-file ()
   "Find a recent file using ido."
   (interactive)
