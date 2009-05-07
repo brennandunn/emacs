@@ -17,6 +17,11 @@
 ; show column number
 (column-number-mode 1)
 
+; show line numbers
+(vendor 'linum)
+(global-linum-mode 1)
+(setq linum-format "%3d ")
+
 ; disable auto-save files (#foo#)
 (setq auto-save-default nil)
 
