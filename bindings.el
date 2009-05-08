@@ -1,11 +1,15 @@
-; general
+; git (egg)
 (global-set-key (kbd "C-x g") 'egg-status)
+(global-set-key (kbd "C-x C-g") 'egg-file-toggle-blame-mode)
 
 ; set mark (C-SPC conflicts with LaunchBar)
 (global-set-key (kbd "C-q") 'set-mark-command)
 
 ; full screen when using carbon
 (global-set-key (kbd "M-n") 'mac-toggle-max-window)
+
+; jump to next ^$ (newline)
+(global-set-key (kbd "C-c v") 'go-to-newline)
 
 ; anything + proel
 (vendor 'anything)
@@ -24,9 +28,6 @@
 ; keybindings for a + p
 (global-set-key (kbd "C-c C-d") 'anything)
 (global-set-key (kbd "C-c C-f") 'proel-grep-in-project)
-
-; C-t alias for finding files in project
-(global-set-key (kbd "C-t") 'textmate-goto-file)
 
 ; mac stuff
 (global-set-key (kbd "M-s") 'save-buffer)      ; save with apple-s
