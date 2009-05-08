@@ -32,16 +32,17 @@
 (vendor 'egg)
 (textmate-mode)
 (vendor 'whitespace)
+(vendor 'rhtml-mode)
 
 (load custom-file 'noerror)
 
 ; finish!
 (message "Loaded in %ds"
-	 (destructuring-bind
-	     (hi lo ms)
-	     (current-time)
-	   (- (+ hi lo)
-	      (+ (first *emacs-load-start*)
-		 (second *emacs-load-start*)))))
+         (destructuring-bind
+             (hi lo ms)
+             (current-time)
+           (- (+ hi lo)
+              (+ (first *emacs-load-start*)
+                 (second *emacs-load-start*)))))
 
 (provide 'init)

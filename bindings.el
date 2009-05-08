@@ -15,6 +15,7 @@
 (vendor 'anything)
 (vendor 'anything-config)
 (vendor 'fuzzy-match)
+(vendor 'anything-match-plugin)
 (vendor 'proel)
 (grep-compute-defaults)
 (setq anything-sources '(anything-c-source-buffers+
