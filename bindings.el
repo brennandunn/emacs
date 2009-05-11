@@ -26,9 +26,9 @@
 (grep-compute-defaults)
 (setq anything-sources '(anything-c-source-buffers+
 			 proel-anything-current-project-files
+			 proel-anything-projects
 			 anything-c-source-locate
 			 anything-c-source-recentf
-			 proel-anything-projects
 			 anything-c-source-org-headline
 			 anything-c-source-buffer-not-found))
 
