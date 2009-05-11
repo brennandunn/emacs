@@ -30,7 +30,9 @@
 (vendor 'unit-test)
 (vendor 'autotest)
 (vendor 'egg)
-(textmate-mode)
+(vendor 'tabbar)
+(tabbar-mode)
+;(textmate-mode)
 (vendor 'whitespace)
 (vendor 'rhtml-mode)
 

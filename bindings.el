@@ -2,6 +2,12 @@
 (global-set-key (kbd "C-x g") 'egg-status)
 (global-set-key (kbd "C-x C-g") 'egg-file-toggle-blame-mode)
 
+; navigate tabs
+(global-set-key [M-left] 'tabbar-backward)
+(global-set-key [M-right] 'tabbar-forward)
+(global-set-key [M-up] 'kill-buffer-and-window)
+(global-set-key [M-down] 'kill-this-buffer)
+
 ; set mark (C-SPC conflicts with LaunchBar)
 (global-set-key (kbd "C-q") 'set-mark-command)
 
