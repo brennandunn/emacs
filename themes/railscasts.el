@@ -21,6 +21,11 @@
      (font-lock-type-face ((t (:foreground "white"))))
      (font-lock-variable-name-face ((t (:foreground "white"))))
      (font-lock-warning-face ((t (:foreground "red")))) ; TODO
+     (tabbar-default ((t (:inherit tabbar-default-face :foreground "#6d8b99"))))
+     (tabbar-button ((t (:inherit tabbar-default-face :foreground "#4a6a79" :box nil))))
+     (tabbar-selected ((t (:inherit tabbar-default :foreground "white" :box nil))))
+     (tabbar-unselected ((t (:inherit tabbar-default :box nil))))
+     (tabbar-separator ((t (:inherit tabbar-default :foreground "#374a52"))))
      (highlight ((t (:background "red")))) ; TODO
      (italic ((t (:italic t))))
      (hl-line ((t (:background "#112233"))))

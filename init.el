@@ -20,6 +20,7 @@
 (require 'modes)
 (require 'theme)
 (require 'snippets)
+(require 'tabbar-config)
 
 (vendor 'cheat)
 (vendor 'far-search)
@@ -32,19 +33,6 @@
 (vendor 'egg)
 (vendor 'whitespace)
 (vendor 'rhtml-mode)
-
-; tab bar stuff
-(vendor 'tabbar)
-(setq tabbar-buffer-groups-function
-      (lambda ()
-	(list "All")))
-(setq tabbar-buffer-list-function
-      (lambda ()
-	(remove-if
-	 (lambda(buffer)
-	   (find (aref (buffer-name buffer) 0) " *"))
-	 (buffer-list))))
-(tabbar-mode)
 
 (load custom-file 'noerror)
 
