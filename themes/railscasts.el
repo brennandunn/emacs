@@ -26,6 +26,8 @@
      (tabbar-selected ((t (:inherit tabbar-default :foreground "white" :box nil))))
      (tabbar-unselected ((t (:inherit tabbar-default :box nil))))
      (tabbar-separator ((t (:inherit tabbar-default :foreground "#374a52"))))
+     (region ((t (:background "gray80"))))
+     (show-paren-match ((t (:background "gray40"))))
      (highlight ((t (:background "red")))) ; TODO
      (italic ((t (:italic t))))
      (hl-line ((t (:background "#112233"))))
