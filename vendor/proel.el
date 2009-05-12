@@ -37,7 +37,7 @@
 (defvar proel-dirs-with-projects (list (expand-file-name "~/Development/active"))
   "The list of directories one stores projects in.")
 
-(defvar proel-files-interesting "\\(?:\\.erl$\\|\\.hrl$\\|\\.cpp$\\|\\.hpp$\\|\\.java$\\|\\.lisp$\\|\\.scm$\\|\\.h$\\|\\.c$\\|\\.rb$\\|\\.rhtml$\\|\\.yml$\\|\\.rjs$\\|\\.erb$\\|\\.css$\\|\\.js$\\|.g$\\|\\.xpl$\\|\\.xml\\|^[^\\.]*$\\)"
+(defvar proel-files-interesting "\\(?:\\.erl$\\|\\.el$\\|\\.hrl$\\|\\.cpp$\\|\\.hpp$\\|\\.java$\\|\\.lisp$\\|\\.scm$\\|\\.h$\\|\\.c$\\|\\.rb$\\|\\.rhtml$\\|\\.yml$\\|\\.rjs$\\|\\.erb$\\|\\.css$\\|\\.js$\\|.g$\\|\\.xpl$\\|\\.xml\\|^[^\\.]*$\\)"
   "The regular expression a path has to match to be considered a
 part of a project")
 

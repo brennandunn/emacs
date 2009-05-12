@@ -20,17 +20,21 @@
 ; anything + proel
 (vendor 'anything)
 (vendor 'anything-config)
+(vendor 'anything-rcodetools)
 (vendor 'fuzzy-match)
 (vendor 'anything-match-plugin)
 (vendor 'proel)
+(setq rct-get-all-methods-command "PAGER=cat fri -l")
 (grep-compute-defaults)
 (setq anything-sources '(anything-c-source-buffers+
 			 proel-anything-current-project-files
 			 proel-anything-projects
+			 anything-c-source-complete-ruby
 			 anything-c-source-locate
 			 anything-c-source-recentf
 			 anything-c-source-org-headline
 			 anything-c-source-buffer-not-found))
+(define-key anything-map (kbd "C-c C-z") 'anything-execute-persistent-action)
 
 ; keybindings for a + p
 (global-set-key (kbd "C-c C-d") 'anything)
