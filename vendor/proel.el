@@ -34,7 +34,7 @@
   '((t (:bold t :overline t :foreground "#b10011")))
   "Face for displaying the project name in the modeline." :group 'proel)
 
-(defvar proel-dirs-with-projects (list (expand-file-name "~/Development/active"))
+(defvar proel-dirs-with-projects (list (expand-file-name "~/"))
   "The list of directories one stores projects in.")
 
 (defvar proel-files-interesting "\\(?:\\.erl$\\|\\.el$\\|\\.hrl$\\|\\.cpp$\\|\\.hpp$\\|\\.java$\\|\\.lisp$\\|\\.scm$\\|\\.h$\\|\\.c$\\|\\.rb$\\|\\.rhtml$\\|\\.yml$\\|\\.rjs$\\|\\.erb$\\|\\.css$\\|\\.js$\\|.g$\\|\\.xpl$\\|\\.xml\\|^[^\\.]*$\\)"

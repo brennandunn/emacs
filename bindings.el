@@ -34,7 +34,6 @@
 (setq anything-sources '(anything-c-source-buffers+
 			 anything-c-source-files-in-current-dir
 			 proel-anything-current-project-files
-			 proel-anything-projects
 			 anything-c-source-locate
 			 anything-c-source-recentf
 			 anything-c-source-org-headline
