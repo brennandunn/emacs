@@ -10,7 +10,6 @@
 	  '(lambda ()
 	     (ruby-electric-mode t)
 	     (local-set-key [return] 'ruby-reindent-then-newline-and-indent)
-	     (define-key ruby-mode-map (kbd "C-c x") 'xmp)
 	     ))
 
 (defun ruby-reindent-then-newline-and-indent ()

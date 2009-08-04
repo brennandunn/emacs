@@ -8,11 +8,16 @@
 (global-set-key [M-up] 'kill-buffer-and-window)
 (global-set-key [M-down] 'kill-this-buffer)
 
+; sync kill ring with os x clipboard
+(global-set-key (kbd "C-w") 'clipboard-kill-region)
+(global-set-key (kbd "M-w") 'clipboard-kill-ring-save)
+(global-set-key (kbd "C-y") 'clipboard-yank)
+
 ; set mark (C-SPC conflicts with LaunchBar)
 (global-set-key (kbd "C-q") 'set-mark-command)
 
 ; full screen when using carbon
-(global-set-key (kbd "M-n") 'mac-toggle-max-window)
+(global-set-key "\M-\r" 'mac-toggle-max-window)
 
 ; jump to next ^$ (newline)
 (global-set-key (kbd "C-c v") 'go-to-newline)
@@ -20,21 +25,21 @@
 ; anything + proel
 (vendor 'anything)
 (vendor 'anything-config)
-(vendor 'anything-rcodetools)
+;(vendor 'anything-rcodetools)
 (vendor 'fuzzy-match)
 (vendor 'anything-match-plugin)
 (vendor 'proel)
-(setq rct-get-all-methods-command "PAGER=cat fri -l")
+;(setq rct-get-all-methods-command "PAGER=cat fri -l")
 (grep-compute-defaults)
 (setq anything-sources '(anything-c-source-buffers+
+			 anything-c-source-files-in-current-dir
 			 proel-anything-current-project-files
 			 proel-anything-projects
-			 anything-c-source-complete-ruby
 			 anything-c-source-locate
 			 anything-c-source-recentf
 			 anything-c-source-org-headline
 			 anything-c-source-buffer-not-found))
-(define-key anything-map (kbd "C-c C-z") 'anything-execute-persistent-action)
+;(define-key anything-map (kbd "C-c C-z") 'anything-execute-persistent-action)
 
 ; keybindings for a + p
 (global-set-key (kbd "C-c C-d") 'anything)

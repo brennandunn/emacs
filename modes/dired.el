@@ -1,3 +1,6 @@
+; Dired+
+;(vendor 'dired+)
+
 ; Dired
 (require 'dired)
 
